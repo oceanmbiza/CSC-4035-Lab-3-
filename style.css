@@ -1,0 +1,194 @@
+/* Global Styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+   background-color: rgb(102, 51, 153);
+    color: #333;
+    padding-bottom: 80px;
+  }
+  header{
+    background-color: rgb(102, 51, 153);
+    padding: 10px 0;
+  }
+  footer {
+    background: #333;
+    color: #fff;
+    padding: 10px 0;
+  }
+  footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+  
+  .navbar ul {
+    display: flex;
+    justify-content: flex-end;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .navbar ul li {
+    margin: 0 15px;
+  }
+  
+  .navbar ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 5px 10px;
+    transition: background 0.3s ease;
+  }
+  
+  .navbar ul li a:hover {
+    background: #aaadaa;
+    color: black;
+    border-radius: 8px;
+  }
+  
+  /* Home Page Styles */
+  .hero {
+    text-align: center;
+    padding: 50px 20px;
+    background: #e2e2e2;
+  }
+  
+  .features {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+  }
+  
+  .feature {
+    background: #fff;
+    border-radius: 15px;
+    padding-bottom: 10px;
+    padding: 15px;
+    flex: 1;
+    margin: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Services Page Styles */
+  .services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    padding: 20px;
+  }
+  
+  .service-card {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 15px;
+    padding: 15px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .service-card img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+  }
+  
+  .service-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Contact Page Styles */
+  .contact-form-section {
+    padding: 20px;
+    max-width: 600px;
+    margin: 20px auto;
+    background: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .contact-form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  
+  .contact-form input[type="text"],
+  .contact-form input[type="email"],
+  .contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    transition: border-color 0.3s ease;
+  }
+  
+  .contact-form input[type="text"]:focus,
+  .contact-form input[type="email"]:focus,
+  .contact-form textarea:focus {
+    border-color: #007BFF;
+  }
+  
+  .contact-form button {
+    background: #007BFF;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  .contact-form button:hover {
+    background: #0056b3;
+  }
+  
+  /* Keyframes Animation */
+  @keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+  
+  /* Apply Animation */
+  .hero,
+  .features,
+  .services-grid,
+  .contact-form-section {
+    animation: fadeIn 1s ease-in;
+  }
+  
+  /* Media Queries */
+  /* For screens up to 1024px */
+  @media (max-width: 1024px) {
+    .features {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+  
+  /* For screens up to 768px */
+  @media (max-width: 768px) {
+    .navbar ul {
+      flex-direction: column;
+      align-items: center;
+    }
+    .service-card {
+      padding: 10px;
+    }
+  }
+  
+  /* For screens up to 480px */
+  @media (max-width: 480px) {
+    .contact-form-section {
+      padding: 10px;
+    }
+    .navbar ul li {
+      margin: 5px 0;
+    }
+  }
+  
