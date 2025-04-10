@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Contact | Lab3 Multipage</title>
   <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
 </head>
 <body>
   <header>
@@ -17,11 +18,11 @@
     </nav>
   </header>
   <main>
-    <section class="contact-form-section" id="contactUs">
+    <section class="contact-form-section" >
       <h1>Contact Us</h1>
-      <form class="contact-form" action="#" method="post">
-        <label for="name">Name:</label>
-        <input type="text" id="name" name="name" required>
+      <form id="contactForm" class="contact-form" action="#" method="post">
+        <label for="nameInput">Name:</label>
+        <input id="nameInput" type="text" name="name">
         
         <label for="email">Email:</label>
         <input type="email" id="email" name="email" required>
@@ -29,20 +30,13 @@
         <label for="subject">Subject:</label>
         <input type="text" id="subject" name="subject" required>
         
-        <label for="message">Message:</label>
-        <textarea id="message" name="message" rows="5" required></textarea>
+        <label for="messageInput">Message:</label>
+        <textarea id="messageInput" name="message"  rows="5" required></textarea>
         
-        <button type="submit" id="submit">Send Message</button>
+        <button id="submit" type="submit">Send Message</button>
       </form>
-    </section>
-    <script>
-        // JavaScript to handle form submission
-        document.getElementById('submit').addEventListener('click', function(event) {
-            event.preventDefault(); // Prevent the default form submission
-            alert('Your message has been sent!'); // Show a confirmation message
-            document.querySelector('.contact-form').reset(); // Reset the form fields
-        }); 
-    </script>
+        <p id="response"></p>
+   </section>
   </main>
   <footer>
     <p>&copy; 2025 Lab3 Multipage. All rights reserved.</p>

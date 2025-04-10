@@ -11,6 +11,10 @@ body {
     background-color: rgb(102, 51, 153);
     padding: 10px 0;
   }
+  .dark-theme {
+    background-color: #121212;
+    color: #121111;
+    }
   footer {
     background: #333;
     color: #fff;
@@ -50,7 +54,7 @@ body {
     color: black;
     border-radius: 8px;
   }
-  
+
   /* Home Page Styles */
   .hero {
     text-align: center;
@@ -191,4 +195,15 @@ body {
       margin: 5px 0;
     }
   }
-  
+  .question:hover{
+    background-color: #aaadaa;
+    color: black;
+    border-radius: 8px;
+  }
+  .answer {
+    display: none;
+
+    }
+    .answer.visible {
+    display: block;
+    }

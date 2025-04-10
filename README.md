@@ -28,3 +28,5 @@
 
 - **Animations:**  
   Integrated CSS keyframes for fade-in effects on page content and smooth transitions on hover/focus states to enhance user experience.
+- **Javascript**
+External script.js adds a Working theme toggle, form validation, FAQ toggle, and fetch API feature that anables our website to be interactive.

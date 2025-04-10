@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Home | Lab3 Multipage</title>
   <link rel="stylesheet" href="style.css">
+   <script src="script.js" defer></script>
 </head>
 <body>
   <header>
@@ -13,6 +14,7 @@
         <li><a href="index.html">Home</a></li>
         <li><a href="services.html">Services</a></li>
         <li><a href="contact.html">Contact</a></li>
+        <button id="themeToggle">Switch theme</button>
       </ul>
     </nav>
   </header>
@@ -20,6 +22,14 @@
     <section class="hero">
       <h1>Welcome to Our Website</h1>
       <p>Discover our services and get in touch with our experts in Modern Technology.</p>
+      <h2>Team Members</h2>
+<ul id="userList"></ul>
+<button id="loadUsersBtn">Load Users</button>
+<div class="faq-item">
+  <h3 class="question">What is this website about?</h3>
+  <p class="answer">This is a demo project for learning web
+  development.</p>
+  </div>
     </section>
     <section class="features">
       <div class="feature">
